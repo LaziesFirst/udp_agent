@@ -1,0 +1,27 @@
+{
+    "hosts": {
+        "udp_server": "0.0.0.0",
+        "web_app": "0.0.0.0"
+    },
+    "ports": {
+        "udp_server": "8080",
+        "web_app": "8090"
+    },
+    "udp": {
+        "byte_size": "1024"
+    },
+    "csv_data": {
+        "path": "/home/lazies/GolandProjects/udp_agent/files",
+        "version": "v_1",
+        "raw_filename": "raw_data.csv",
+        "tps_filename": "tps_data.csv"
+    },
+    "urls": {
+        "get_raw_data": "/raw-data",
+        "get_tps_data": "/tps-data"
+    },
+    "file_headers" : {
+        "raw": ["EndTime", "StartTime", "Method", "Url", "RemoteIp", "TotalLatency", "Header", "Params"],
+        "tps": ["EndTime", "Tps", "AverageLatency"]
+    }
+}
